@@ -1,0 +1,18 @@
+ul{
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    overflow: hidden;
+    border: 4px solid #A9D6E5;
+}
+
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color:#19747E;
+    text-align: center;
+    padding: 14px 16px;
+
+}
