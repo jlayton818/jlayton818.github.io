@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'playfair_displayregular';
+  src: url('playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+       url('playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 body {
     margin: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .sidebar {
@@ -9,6 +18,7 @@ body {
     .content {
       grid-area: content;
       position: relative;
+      
     }
   
     .header {
@@ -22,6 +32,8 @@ body {
       grid-area: footer;
       margin-bottom: 20px;
       text-align: center;
+      background-image: url(backgroundFooter.jfif);
+      background-size: cover;
     }
   
   
@@ -105,6 +117,57 @@ a {
   .content span{
     font-size: 20px;
     bottom: 10px;
+  }
+}
+@media print {
+  /* a. Your Name (h1) */
+  h1 {
+    color: black;
+    font-family: serif; 
+  }
+
+  /* b. Your description about yourself (p) */
+  p {
+    color: black;
+    font-family: serif;
+  }
+
+  /* d. Your Education Details (ul or ol) */
+  ul, li {
+    color: black;
+    font-family: serif;
+  }
+
+  /* e. Your Quote (blockquote) */
+  blockquote {
+    color: black;
+    font-family: serif;
+  }
+
+  /* f. Your Footer (contact information without any logo or icons) */
+  footer {
+    color: black;
+    font-family: serif;
+  }
+
+  /* g. Make all font Black (already specified in individual elements) */
+  body, h1, p, ul, li, blockquote, footer {
+      color: black !important;
+  }
+
+  /* h. Serif font (already specified in individual elements) */
+  body, h1, p, ul, ol, blockquote, footer {
+      font-family: serif !important;
+  }
+
+  /* i. Make sure your 1 element using your custom font prints the custom font! */
+  h1 {
+      font-family: 'CustomFont', sans-serif; 
+  }
+
+  /* j. Adjust the printable margins to be 1" on all sides */
+  body {
+    margin: 1in;
   }
 }
 
