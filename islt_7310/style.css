@@ -8,16 +8,20 @@ body {
   
     .content {
       grid-area: content;
+      position: relative;
     }
   
     .header {
       grid-area: header;
-      
+    }
+    .name {
+      text-align: center;
     }
   
     .footer {
       grid-area: footer;
       margin-bottom: 20px;
+      text-align: center;
     }
   
   
@@ -26,7 +30,7 @@ body {
       grid-gap: 10px;
       grid-template-columns: 32% 30% 34%;
       grid-template-areas:
-      "test header header"
+      "name header header"
       "sidebar content content"
       "footer  footer  footer";
       background-color: #fff;
@@ -42,6 +46,9 @@ body {
     font-size: 150%;
   }
   
+  li{
+    text-align: center;
+  }
   .header,
   .footer {
     background-color: #999;
@@ -55,7 +62,6 @@ body {
   }
   p{
     font-size: 30px;
-    
 }
 p::first-letter{
   font-size: 40px;
@@ -65,3 +71,41 @@ a {
   text-align:center;
   display:block;
 }
+.picture{
+  width: 100%;
+}
+.indentation{
+  text-indent: 20px;
+}
+.content span{
+  color: blue;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 768px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: green;
+    color: aliceblue;
+  }
+  p{
+    font-size: 20px;
+  }
+  p::first-letter{
+  font-size: 23px;
+  font-style: italic;
+  }
+  .content{
+    font-size: 20px;
+  }
+  .content span{
+    font-size: 20px;
+    bottom: 10px;
+  }
+}
+
+
