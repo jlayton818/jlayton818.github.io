@@ -93,9 +93,11 @@ a {
   color: blue;
   position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: 60%;
   font-size: 30px;
 }
+
+
 
 @media only screen and (max-width: 768px){
   .wrapper{
@@ -104,6 +106,10 @@ a {
     background-color: green;
     color: aliceblue;
   }
+  .iframe{
+    width: 100%;
+  }
+  
   p{
     font-size: 20px;
   }
@@ -116,58 +122,7 @@ a {
   }
   .content span{
     font-size: 20px;
-    bottom: 10px;
-  }
-}
-@media print {
-  /* a. Your Name (h1) */
-  h1 {
-    color: black;
-    font-family: serif; 
-  }
-
-  /* b. Your description about yourself (p) */
-  p {
-    color: black;
-    font-family: serif;
-  }
-
-  /* d. Your Education Details (ul or ol) */
-  ul, li {
-    color: black;
-    font-family: serif;
-  }
-
-  /* e. Your Quote (blockquote) */
-  blockquote {
-    color: black;
-    font-family: serif;
-  }
-
-  /* f. Your Footer (contact information without any logo or icons) */
-  footer {
-    color: black;
-    font-family: serif;
-  }
-
-  /* g. Make all font Black (already specified in individual elements) */
-  body, h1, p, ul, li, blockquote, footer {
-      color: black !important;
-  }
-
-  /* h. Serif font (already specified in individual elements) */
-  body, h1, p, ul, ol, blockquote, footer {
-      font-family: serif !important;
-  }
-
-  /* i. Make sure your 1 element using your custom font prints the custom font! */
-  h1 {
-      font-family: 'CustomFont', sans-serif; 
-  }
-
-  /* j. Adjust the printable margins to be 1" on all sides */
-  body {
-    margin: 1in;
+    bottom:0px;
   }
 }
 
